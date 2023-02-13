@@ -1,0 +1,64 @@
+{
+  "name": "preact-merge-refs",
+  "version": "1.0.0",
+  "description": "Simple utility function for merging Preact refs",
+  "source": "src/index.ts",
+  "main": "lib/preact-merge-refs.js",
+  "module": "lib/preact-merge-refs.module.js",
+  "exports": "./lib/preact-merge-refs.modern.js",
+  "unpkg": "./lib/preact-merge-refs.umd.js",
+  "types": "./lib/types/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "dev": "webpack serve --progress --config webpack.config.development.js",
+    "lint": "eslint src && eslint examples",
+    "clean": "rimraf lib",
+    "watch": "microbundle watch --no-sourcemap",
+    "compile": "microbundle --no-sourcemap",
+    "build": "yarn run clean && yarn run compile",
+    "prepublishOnly": "yarn run lint && yarn run build"
+  },
+  "keywords": [
+    "preact",
+    "refs",
+    "merge"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fakundo/preact-merge-refs"
+  },
+  "author": "Roman Samoylov (https://github.com/fakundo)",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "html-webpack-plugin": "^5.5.0",
+    "microbundle": "^0.15.1",
+    "preact": "^10.12.1",
+    "prettier": "^2.8.4",
+    "rimraf": "^4.1.2",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.5",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "peerDependencies": {
+    "preact": ">=10.0.0"
+  }
+}
