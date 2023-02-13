@@ -17,7 +17,9 @@ export default function App() {
 
   return (
     <>
-      <button onClick={() => setVisible(!visible)}>toggle</button>
+      <button type="button" onClick={() => setVisible(!visible)}>
+        toggle
+      </button>
       <hr />
       {visible && (
         <div
