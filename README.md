@@ -13,7 +13,7 @@ npm i preact-merge-refs
 ## Usage
 
 ```js
-import { useRef } from "preact/hooks";
+import { useRef } from 'preact/hooks';
 import { mergeRefs } from 'preact-merge-refs'
 
 const refFunc = (node) => {};

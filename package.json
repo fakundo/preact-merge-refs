@@ -1,6 +1,6 @@
 {
   "name": "preact-merge-refs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple utility function for merging Preact refs",
   "source": "src/index.ts",
   "main": "lib/preact-merge-refs.js",
