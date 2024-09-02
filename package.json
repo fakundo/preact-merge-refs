@@ -5,7 +5,7 @@
   "source": "src/index.ts",
   "main": "lib/preact-merge-refs.js",
   "module": "lib/preact-merge-refs.module.js",
-  "exports": "./lib/preact-merge-refs.modern.js",
+  "exports": "./lib/preact-merge-refs.modern.mjs",
   "unpkg": "./lib/preact-merge-refs.umd.js",
   "types": "./lib/types/index.d.ts",
   "files": [
